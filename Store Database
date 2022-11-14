@@ -1,0 +1,22 @@
+CREATE TABLE beauty_store (id INTEGER PRIMARY KEY, product TEXT, cost INTEGER, sold INTEGER, instock INTEGER, ordered INTEGER);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("eyeshadow", 30, 10, 0, 20);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("mascara", 20, 15, 5, 30);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("lipstick", 30, 5, 20, 0);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("nail polish", 10, 20, 5, 40);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("eyeliner", 15, 14, 2, 30);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("lip liner", 12, 4, 10, 0);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("shampoo", 40, 6, 10, 15);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("conditioner", 35, 6, 10, 15);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("hair straightener", 150, 3, 10, 0);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("hair curler", 175, 5, 8, 2);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("hairspray", 15, 2, 20, 0);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("hair dye", 20, 30, 5, 50);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("lotion", 10, 11, 2, 25);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("shaving cream", 8, 14, 3, 20);
+INSERT INTO beauty_store (product, cost, sold, instock, ordered) VALUES ("razors", 15, 14, 7, 15);
+
+SELECT * FROM beauty_store;
+
+SELECT SUM(ordered) FROM beauty_store;
+SELECT SUM(sold) FROM beauty_STORE;
+SELECT * FROM beauty_store WHERE cost > 30;
